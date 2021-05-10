@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/3bb6ab64a2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="sticky-top container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\лого.jpg" alt="logo"></a>
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index_catalog.html">Catalog</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModal">Contact us</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </ div>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-group" action="MAILTO:;" method="POST">
+              <div class="form-group">
+                <label for="userName" class="col-form-label">Your name (optional)</label>
+                <input type="text" class="form-control" id="userName" name="user" placeholder="Name" /> <br> <br>
+                <label for="userEmail" class="col-form-label">Your email (optional)</label>
+                <input type="email" class="form-control" id="userEmail" name="mail" placeholder="Email" /> <br><br>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--products-->
+    <section id="product">
+      <hr class="new5">
+      <h1 class="gradient-text">Products</h1>
+      <hr class="new5">
+
+      <!--main_name-->
+      <div class="line1 row">
+        <div class="catalog-product">
+          <a href="product1.html">
+            <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\Рука для вв инъекции\DSC08159.jpg" alt="product" class="catalog-products">
+          </a>
+          <h4 class="gradient-text"> Hand for VK Injection </h4>
+        </div>
+        <div class="catalog-product">
+          <a href="product2.html">
+            <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\Рука для вк инъекции\DSC08154.jpg" alt="product" class="catalog-products">
+          </a>
+          <h4 class="gradient-text"> Hand for VV injection </h4>
+        </div>
+        <div class="catalog-product">
+          <a href="product3.html">
+            <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\ягодица для вм инъекции\DSC08180.jpg" alt="product" class="catalog-products">
+          </a>
+          <h4 class="gradient-text">Buttock for VM Injection</h4>
+        </div>
+      </div>
+      <hr class="new5">
+      <h1 class="consumer-marg gradient-text"> Consummers</h1>
+      <h1 class="colorand"> and </h1>
+      <h1 class="consumer-marg-down gradient-text">Training apparatus </h1>
+      <hr class="new5">
+
+      <div class="line1 row">
+        <div class="col-lg-6">
+          <div class="catalog-product">
+            <a href="product4.html">
+              <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\тренажер по хирургии 1\DSC08145.jpg" alt="product" class="catalog-products">
+            </a>
+            <h4 class="gradient-text"> Surgery training apparatus 1 </h4>
+          </div>
+          <div class="catalog-product">
+            <a href="product5.html">
+              <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\тренажер по хирургии 2\20210407-DSC08170.jpg" alt="product" class="catalog-products">
+            </a>
+            <h4 class="gradient-text"> Surgery training apparatus 2 </h4>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="catalog-product">
+            <a href="product6.html">
+              <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\Рука для вк инъекции\расходник для руки 2\DSC09142.jpg" alt="product" class="catalog-products">
+            </a>
+            <h4 class="gradient-text"> Consummer for hand 1 </h4>
+          </div>
+          <div class="catalog-product">
+            <a href="product7.html">
+              <img src="C:\Users\Aibek\Desktop\aitu\1st course\3rd trimester\webdev\midterm\pictures\drive-download-20210509T103736Z-001\Рука для вв инъекции\Расходник для руки 1\DSC08184.jpg" alt="product" class="catalog-products">
+            </a>
+            <h3 class="gradient-text"> Consummer for hand 2 </h3>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="new5 gradient-text">
+    </section>
+    <footer>
+      <div class="social-networks">
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+      </div>
+      <p>Copyright <i class="far fa-copyright"></i>2021 All rights reserved | made by Tamerlan & Aybek</p>
+
+    </footer>
+
+</body>
+
+</html>
